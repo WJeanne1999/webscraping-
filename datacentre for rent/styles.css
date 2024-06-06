@@ -1,0 +1,118 @@
+body {
+    font-family: 'helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4a675854; /* Light yellow background */
+    color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    color: #ffffff; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #000000; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p1{
+    color: #333; 
+    font-size: 1.75em;
+    margin-bottom: 20px;
+}
+
+p{
+    color: #333; 
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.left-column {
+    width: 35%;
+    padding: 15px;
+}
+
+.right-column {
+    width: 60%;
+    padding: 15px;
+}
+
+.property-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-card {
+    background-color: #fff;
+    width: 100%; /* Ensure the card takes the full width of its container */
+    height: 200px; /* Fixed height */
+    padding: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 90px;
+    display: absolute;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+
+.image-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px; /* Adjust the size to fit within the card */
+    height: 180px;
+    align-content: center;
+    border-radius: 85px;
+    padding: 10px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
